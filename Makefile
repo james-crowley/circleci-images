@@ -1,7 +1,7 @@
 BUNDLES = \
   android node python ruby golang php \
   postgres mariadb mysql mongo dynamodb elixir erlang \
-  jruby clojure openjdk buildpack-deps redis rust
+  jruby clojure openjdk buildpack-deps redis rust adoptopenjdk
 
 images: $(foreach b, $(BUNDLES), $(b)/generate_images)
 
