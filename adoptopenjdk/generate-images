@@ -5,7 +5,6 @@ BASE_REPO=adoptopenjdk
 VARIANTS=(browsers node node-browsers)
 
 TAG_FILTER="grep -v -e jre"
-#TAG_INCLUDE_FILTER="grep -e 8-jdk- -e 11-jdk- -e 15-jdk- -e 16-jdk-"
 
 function generate_customizations() {
 
